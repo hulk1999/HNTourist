@@ -1,0 +1,56 @@
+#search-form-container{
+	width: calc(100% - 2px);
+}
+
+#search-form-container input{
+	width: calc(100% - 60px);
+}
+
+.admin{
+	color: rgb(10, 207, 15);
+}
+
+#change-role-form{
+	display: inline;
+}
+
+#change-role-form button{
+	border: none;
+	padding: 0px;
+	margin: 0px;
+	color: rgb(0, 97, 255);
+	background-color: white;
+	outline: none;
+	cursor: pointer;
+}
+
+td:first-of-type a{
+	color: rgb(0, 97, 255);
+}
+
+td:first-of-type{
+	font-size: 14px;
+	width: 180px;
+}
+
+td:nth-of-type(2){
+	width: 270px;
+}
+
+td:nth-of-type(3){
+	width: 80px;
+}
+
+td:nth-of-type(4){
+	font-size: 14px;
+	font-weight: bold;
+	width: 160px;
+}
+
+td:nth-of-type(5){
+	width: 120px;
+}
+
+td:nth-of-type(6){
+	width: 80px;
+}

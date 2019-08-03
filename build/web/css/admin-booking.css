@@ -1,0 +1,44 @@
+#search-form-container{
+	width: calc(100% - 2px);
+}
+
+#search-form-container input{
+	width: calc(100% - 60px);
+}
+
+td:first-of-type a{
+	color: rgb(0, 97, 255);
+}
+
+td:first-of-type{
+	font-size: 14px;
+	width: 50px;
+}
+
+td:nth-of-type(2){
+	width: 160px;
+	text-align: center;
+}
+
+td:nth-of-type(3){
+	width: 100px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+td:nth-of-type(4){
+	width: 140px;
+}
+
+td:nth-of-type(5), td:nth-of-type(6), td:nth-of-type(7){
+	width: 50px;
+}
+
+td:nth-of-type(8){
+	padding: 0px;
+}
+
+td:nth-of-type(8) select{
+	font-size: 16px;
+	padding: 3px;
+}

@@ -1,0 +1,65 @@
+#contact-left-column{
+	width: calc(36% - 100px);
+	margin: 35px 24px 40px 76px;
+	float: left;
+}
+
+#contact-left-column #title{
+	font-size: 20px;
+	color: rgb(255, 137, 30);
+}
+
+.info-container{
+	margin-top: 20px;
+	overflow: hidden;
+}
+
+.info-icon{
+	width: 80px;
+	height: 80px;
+	text-align: center;
+	line-height: 80px;
+	margin-right: 20px;
+	float: left;
+	font-size: 30px;
+	color: white;
+	background-color: rgb(255, 137, 30);
+}
+
+.info-title{
+	margin-bottom: 8px;
+}
+
+.info{
+	font-size: 14px;
+}
+
+#contact-right-column{
+	width: calc(63% - 60px);
+	margin: 35px 60px 40px 0px;
+	display: inline-block;
+}
+
+input, textarea{
+	width: calc(100% - 20px);
+	font-size: 16px;
+	font-family: Verdana;
+	padding: 10px;
+	margin: 0px;
+	margin-bottom: 15px;
+	border: none;
+	background-color: rgb(230, 230, 230);
+	outline: none;
+}
+
+input[type=submit]{
+	float: right;
+	width: 100px;
+	color: white;
+	background-color: rgb(255, 137, 30);
+	cursor: pointer;
+}
+
+.formInvalid::-webkit-input-placeholder{
+	color: red;
+}

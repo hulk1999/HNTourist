@@ -1,0 +1,230 @@
+#header{
+	position: relative;
+}
+
+#header img{
+    width: 100%;
+    filter: brightness(70%);
+}
+
+#header #header-title{
+	color: white;
+	position: absolute;
+	top: 140px;
+	left: 700px;
+}
+
+#header #header-title #page-title{
+	font-size: 45px;
+}
+
+#header #header-title #slogan{
+	text-align: right;
+	font-size: 20px;
+}
+
+/*=========================================================*/
+
+#search-field{
+	border: 1px solid rgb(200, 200, 200);
+	width: 50%;
+	margin: auto;
+	margin-top: 10px;
+	padding: 10px;
+	box-shadow: 5px 5px 5px rgb(200, 200, 200);
+}
+
+#search-field input{
+	border: none;
+	width: calc(100% - 40px);
+	margin-right: 10px;
+	font-size: 16px;
+}
+
+#search-field input:focus{
+	outline: none;
+}
+
+#search-field button{
+	background-color: transparent;
+	border: none;
+	margin: 0px;
+	padding: 0px;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+/*=========================================================*/
+
+.tours-section{
+	margin: 60px 6% 80px 6%;
+}
+
+.section-title{
+	font-size: 26px;
+	font-weight: bold;
+	color: rgb(0, 51, 102);
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+#tours-container{
+	overflow: hidden;
+}
+
+.tour-container-link{
+	width: 31.6%;
+	margin-right: 2.6%;
+	display: inline;
+	float: left;
+}
+
+.tour-container-link:last-of-type{
+	margin-right: 0px;
+}
+
+.tour-container{
+	height: 380px;
+	float: left;
+	margin: 0 0 4px 0;
+	box-shadow: 1px 1px 2px 2px rgb(200, 200, 200);
+}
+
+a:first-of-type .tour-container{
+	margin-left: 2px;
+}
+
+a:last-of-type .tour-container{
+	margin-right: 4px;
+}
+
+.tour-container .image-container{
+	position: relative;
+	width: 100%;
+}
+
+.tour-container img{
+	width: 100%;
+}
+
+.tour-container .price{
+	padding: 10px;
+	position: absolute;
+	top: 40px;
+	right: 0px;
+	font-size: 14px;
+	color: white;
+	background-color: rgb(255, 137, 30);
+}
+
+.tour-container .discount{
+	position: absolute;
+	bottom: 3px;
+	left: 0px;
+	padding: 6px 12px;
+	font-size: 14px;
+	font-weight: bold;
+	color: white;
+	background-color: rgb(255, 0, 44);
+}
+
+.tour-container .info{
+	color: gray;
+	font-size: 14px;
+	padding: 10px;
+}
+
+.tour-container .info div{
+	display: inline-block;
+	width: 50%;
+}
+
+.tour-container .info .right-column{
+	text-align: right;
+	font-style: italic;
+}
+
+.tour-container .title{
+	padding: 0px 10px;
+	margin-bottom: 10px;
+	color: rgb(5, 85, 138);
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 22px;
+}
+
+.tours-see-more-container{
+	width: 100px;
+	margin: auto;
+	margin-top: 20px;
+	display: block;
+}
+
+.tours-see-more{
+	width: 100%;
+	padding: 10px;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+	background-color: rgb(255, 137, 30);
+	box-shadow: 1px 1px 2px rgb(200, 200, 200);
+}
+
+/*=========================================================*/
+
+#article-section{
+	margin-bottom: 80px;
+}
+
+#article-section .image-container{
+	position: relative;
+	height: 600px;
+	overflow: hidden;
+}
+
+#article-section .image-container img{
+	width: 100%;
+	position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#article-section #article{
+	width: 490px;
+	position: absolute;
+	left: 60px;
+	top: 80px;
+	padding: 20px 40px;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+#article-section #section-title{
+	font-size: 26px;
+	font-weight: bold;
+	margin-bottom: 40px;
+	color: rgb(255, 137, 30);
+}
+
+#article-section #title{
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+#article-section #title a{
+	color: white;
+}
+
+#article-section #see-more-container{
+	text-align: right;
+}
+
+#article-section #see-more{
+	display: inline-block;
+	width: 100px;
+	padding: 5px;
+	margin-top: 20px;
+	text-align: center;
+	color: white;
+	background-color: rgb(255, 137, 30);
+}

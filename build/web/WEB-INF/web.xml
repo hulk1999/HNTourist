@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <!-- FILTERS -->
+    <filter>
+        <filter-name>AccountFilter</filter-name>
+        <filter-class>hungnp.filters.AccountFilter</filter-class>
+    </filter>
+    <filter>
+        <filter-name>AdminFilter</filter-name>
+        <filter-class>hungnp.filters.AdminFilter</filter-class>
+    </filter>
+    <filter>
+        <filter-name>LoginSignUpFilter</filter-name>
+        <filter-class>hungnp.filters.LoginSignUpFilter</filter-class>
+    </filter>
+	<filter-mapping>
+        <filter-name>AdminFilter</filter-name>
+        <url-pattern>/admin/*</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>AccountFilter</filter-name>
+        <url-pattern>/account/*</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>LoginSignUpFilter</filter-name>
+        <url-pattern>/login</url-pattern>
+    </filter-mapping>
+    <!-- END OF FILTERS -->
+    <!-- CONTROLLERS DECLARATION -->
+    <!-- account -->
+    <!-- location -->
+    <!-- article -->
+    <!-- tour article -->
+    <!-- tour -->
+    <!-- booking -->
+    <!-- contact -->
+    <!-- =========================================================================================== -->
+    <!-- account controllers declaration -->
+    <servlet>
+        <servlet-name>AccountMainController</servlet-name>
+        <servlet-class>hungnp.controllers.account.AccountMainController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AccountSignUpController</servlet-name>
+        <servlet-class>hungnp.controllers.account.AccountSignUpController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AccountDeleteController</servlet-name>
+        <servlet-class>hungnp.controllers.account.AccountDeleteController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AccountChangeInfoController</servlet-name>
+        <servlet-class>hungnp.controllers.account.AccountChangeInfoController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AccountChangePasswordController</servlet-name>
+        <servlet-class>hungnp.controllers.account.AccountChangePasswordController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AccountChangeRoleController</servlet-name>
+        <servlet-class>hungnp.controllers.account.AccountChangeRoleController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AccountLoginController</servlet-name>
+        <servlet-class>hungnp.controllers.account.AccountLoginController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AccountLogoutController</servlet-name>
+        <servlet-class>hungnp.controllers.account.AccountLogoutController</servlet-class>
+    </servlet>
+    <!-- location controllers declaration -->
+    <servlet>
+        <servlet-name>LocationMainController</servlet-name>
+        <servlet-class>hungnp.controllers.location.LocationMainController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LocationAddController</servlet-name>
+        <servlet-class>hungnp.controllers.location.LocationAddController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LocationDeleteController</servlet-name>
+        <servlet-class>hungnp.controllers.location.LocationDeleteController</servlet-class>
+    </servlet>
+    <!-- article controllers declaration -->
+    <servlet>
+        <servlet-name>ArticleMainController</servlet-name>
+        <servlet-class>hungnp.controllers.article.ArticleMainController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ArticleAddController</servlet-name>
+        <servlet-class>hungnp.controllers.article.ArticleAddController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ArticleDeleteController</servlet-name>
+        <servlet-class>hungnp.controllers.article.ArticleDeleteController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ArticleEditController</servlet-name>
+        <servlet-class>hungnp.controllers.article.ArticleEditController</servlet-class>
+    </servlet>
+    <!-- tour article controllers declaration -->
+    <servlet>
+        <servlet-name>TourArticleAddController</servlet-name>
+        <servlet-class>hungnp.controllers.tourarticle.TourArticleAddController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>TourArticleMainController</servlet-name>
+        <servlet-class>hungnp.controllers.tourarticle.TourArticleMainController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>TourArticleDeleteController</servlet-name>
+        <servlet-class>hungnp.controllers.tourarticle.TourArticleDeleteController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>TourArticleEditController</servlet-name>
+        <servlet-class>hungnp.controllers.tourarticle.TourArticleEditController</servlet-class>
+    </servlet>
+    <!-- tour controllers declaration -->
+    <servlet>
+        <servlet-name>TourMainController</servlet-name>
+        <servlet-class>hungnp.controllers.tour.TourMainController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>TourDeleteController</servlet-name>
+        <servlet-class>hungnp.controllers.tour.TourDeleteController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>TourEditController</servlet-name>
+        <servlet-class>hungnp.controllers.tour.TourEditController</servlet-class>
+    </servlet>
+    <!-- booking controllers declaration -->
+    <servlet>
+        <servlet-name>BookingMainController</servlet-name>
+        <servlet-class>hungnp.controllers.booking.BookingMainController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>BookingSave1Controller</servlet-name>
+        <servlet-class>hungnp.controllers.booking.BookingSave1Controller</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>BookingSave2Controller</servlet-name>
+        <servlet-class>hungnp.controllers.booking.BookingSave2Controller</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>BookingSave3Controller</servlet-name>
+        <servlet-class>hungnp.controllers.booking.BookingSave3Controller</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>BookingDeleteController</servlet-name>
+        <servlet-class>hungnp.controllers.booking.BookingDeleteController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>BookingChangeStatusController</servlet-name>
+        <servlet-class>hungnp.controllers.booking.BookingChangeStatusController</servlet-class>
+    </servlet>
+    <!-- contact controllers declaration -->
+    <servlet>
+        <servlet-name>ContactMainController</servlet-name>
+        <servlet-class>hungnp.controllers.contact.ContactMainController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ContactAddController</servlet-name>
+        <servlet-class>hungnp.controllers.contact.ContactAddController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ContactChangeProcessedController</servlet-name>
+        <servlet-class>hungnp.controllers.contact.ContactChangeProcessedController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ContactDeleteController</servlet-name>
+        <servlet-class>hungnp.controllers.contact.ContactDeleteController</servlet-class>
+    </servlet>
+    <!-- CONTROLLERS DECLARATION END -->
+    <!-- VIEWS DECLARATION -->
+    <!-- error -->
+    <!-- account -->
+    <!-- admin -->
+    <!-- article -->
+    <!-- tour article -->
+    <!-- booking -->
+    <!-- contact -->
+    <!-- index -->
+    <!-- =========================================================================================== -->
+    <!-- error view declaration -->
+    <servlet>
+        <servlet-name>error</servlet-name>
+        <jsp-file>/error.jsp</jsp-file>
+    </servlet>
+    <!-- account views declaration -->
+    <servlet>
+        <servlet-name>login</servlet-name>
+        <jsp-file>/login.jsp</jsp-file>
+    </servlet>
+    <servlet>
+        <servlet-name>sign-up</servlet-name>
+        <jsp-file>/sign-up.jsp</jsp-file>
+    </servlet>
+    <servlet>
+        <servlet-name>account-change-password</servlet-name>
+        <jsp-file>/account/account-change-password.jsp</jsp-file>
+    </servlet>
+    <servlet>
+        <servlet-name>AccountProfileShowController</servlet-name>
+        <servlet-class>hungnp.controllers.show.account.AccountProfileShowController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AccountChangeInfoShowController</servlet-name>
+        <servlet-class>hungnp.controllers.show.account.AccountChangeInfoShowController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AccountBookingShowController</servlet-name>
+        <servlet-class>hungnp.controllers.show.account.AccountBookingShowController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AccountBookingViewShowController</servlet-name>
+        <servlet-class>hungnp.controllers.show.account.AccountBookingViewShowController</servlet-class>
+    </servlet>
+    <!-- admin views declaration -->
+    <servlet>
+        <servlet-name>AdminLocationShowController</servlet-name>
+        <servlet-class>hungnp.controllers.show.admin.AdminLocationShowController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AdminAccountShowController</servlet-name>
+        <servlet-class>hungnp.controllers.show.admin.AdminAccountShowController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AdminContactShowController</servlet-name>
+        <servlet-class>hungnp.controllers.show.admin.AdminContactShowController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AdminArticleShowController</servlet-name>
+        <servlet-class>hungnp.controllers.show.admin.AdminArticleShowController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AdminTourArticleShowController</servlet-name>
+        <servlet-class>hungnp.controllers.show.admin.AdminTourArticleShowController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AdminTourShowController</servlet-name>
+        <servlet-class>hungnp.controllers.show.admin.AdminTourShowController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AdminAccountViewShowController</servlet-name>
+        <servlet-class>hungnp.controllers.show.admin.AdminAccountViewShowController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AdminArticleEditShowController</servlet-name>
+        <servlet-class>hungnp.controllers.show.admin.AdminArticleEditShowController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AdminArticleAddShowController</servlet-name>
+        <servlet-class>hungnp.controllers.show.admin.AdminArticleAddShowController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AdminContactViewShowController</servlet-name>
+        <servlet-class>hungnp.controllers.show.admin.AdminContactViewShowController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AdminLocationAddShowController</servlet-name>
+        <servlet-class>hungnp.controllers.show.admin.AdminLocationAddShowController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AdminTourArticleAddShowController</servlet-name>
+        <servlet-class>hungnp.controllers.show.admin.AdminTourArticleAddShowController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AdminTourArticleEditShowController</servlet-name>
+        <servlet-class>hungnp.controllers.show.admin.AdminTourArticleEditShowController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AdminTourEditShowController</servlet-name>
+        <servlet-class>hungnp.controllers.show.admin.AdminTourEditShowController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AdminTourViewShowController</servlet-name>
+        <servlet-class>hungnp.controllers.show.admin.AdminTourViewShowController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AdminBookingShowController</servlet-name>
+        <servlet-class>hungnp.controllers.show.admin.AdminBookingShowController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AdminBookingViewShowController</servlet-name>
+        <servlet-class>hungnp.controllers.show.admin.AdminBookingViewShowController</servlet-class>
+    </servlet>
+    <!-- article views declaration -->
+    <servlet>
+        <servlet-name>ArticleShowController</servlet-name>
+        <servlet-class>hungnp.controllers.show.ArticleShowController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ArticleListShowController</servlet-name>
+        <servlet-class>hungnp.controllers.show.ArticleListShowController</servlet-class>
+    </servlet>
+    <!-- tour article views declaration -->
+    <servlet>
+        <servlet-name>TourArticleShowController</servlet-name>
+        <servlet-class>hungnp.controllers.show.TourArticleShowController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>TourArticleListShowController</servlet-name>
+        <servlet-class>hungnp.controllers.show.TourArticleListShowController</servlet-class>
+    </servlet>
+    <!-- booking views declaration -->
+    <servlet>
+        <servlet-name>Booking1ShowController</servlet-name>
+        <servlet-class>hungnp.controllers.show.booking.Booking1ShowController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Booking2ShowController</servlet-name>
+        <servlet-class>hungnp.controllers.show.booking.Booking2ShowController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Booking3ShowController</servlet-name>
+        <servlet-class>hungnp.controllers.show.booking.Booking3ShowController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Booking4ShowController</servlet-name>
+        <servlet-class>hungnp.controllers.show.booking.Booking4ShowController</servlet-class>
+    </servlet>
+    <!-- contact view declaration -->
+    <servlet>
+        <servlet-name>contact</servlet-name>
+        <jsp-file>/contact.jsp</jsp-file>
+    </servlet>
+    <!-- index view declaration -->
+    <servlet>
+        <servlet-name>IndexShowController</servlet-name>
+        <servlet-class>hungnp.controllers.show.IndexShowController</servlet-class>
+    </servlet>
+    <!-- VIEWS DECLARATION END -->
+    <!-- CONTROLLERS URL PATTERN -->
+    <!-- account -->
+    <!-- location -->
+    <!-- article -->
+    <!-- tour article -->
+    <!-- tour -->
+    <!-- booking -->
+    <!-- contact -->
+    <!-- =========================================================================================== -->
+    <!-- account controllers url pattern -->
+    <servlet-mapping>
+        <servlet-name>AccountMainController</servlet-name>
+        <url-pattern>/AccountMainController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AccountSignUpController</servlet-name>
+        <url-pattern>/AccountSignUpController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AccountDeleteController</servlet-name>
+        <url-pattern>/AccountDeleteController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AccountLoginController</servlet-name>
+        <url-pattern>/AccountLoginController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AccountLogoutController</servlet-name>
+        <url-pattern>/AccountLogoutController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AccountChangeInfoController</servlet-name>
+        <url-pattern>/AccountChangeInfoController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AccountChangePasswordController</servlet-name>
+        <url-pattern>/AccountChangePasswordController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AccountChangeRoleController</servlet-name>
+        <url-pattern>/AccountChangeRoleController</url-pattern>
+    </servlet-mapping>
+    <!-- location controllers url pattern -->
+    <servlet-mapping>
+        <servlet-name>LocationMainController</servlet-name>
+        <url-pattern>/LocationMainController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LocationAddController</servlet-name>
+        <url-pattern>/LocationAddController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LocationDeleteController</servlet-name>
+        <url-pattern>/LocationDeleteController</url-pattern>
+    </servlet-mapping>
+    <!-- article controllers url pattern -->
+    <servlet-mapping>
+        <servlet-name>ArticleMainController</servlet-name>
+        <url-pattern>/ArticleMainController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ArticleAddController</servlet-name>
+        <url-pattern>/ArticleAddController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ArticleDeleteController</servlet-name>
+        <url-pattern>/ArticleDeleteController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ArticleEditController</servlet-name>
+        <url-pattern>/ArticleEditController</url-pattern>
+    </servlet-mapping>
+    <!-- tour article controllers url pattern -->
+    <servlet-mapping>
+        <servlet-name>TourArticleAddController</servlet-name>
+        <url-pattern>/TourArticleAddController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>TourArticleMainController</servlet-name>
+        <url-pattern>/TourArticleMainController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>TourArticleDeleteController</servlet-name>
+        <url-pattern>/TourArticleDeleteController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>TourArticleEditController</servlet-name>
+        <url-pattern>/TourArticleEditController</url-pattern>
+    </servlet-mapping>
+    <!-- tour controllers url pattern -->
+    <servlet-mapping>
+        <servlet-name>TourMainController</servlet-name>
+        <url-pattern>/TourMainController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>TourDeleteController</servlet-name>
+        <url-pattern>/TourDeleteController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>TourEditController</servlet-name>
+        <url-pattern>/TourEditController</url-pattern>
+    </servlet-mapping>
+    <!-- booking controllers url pattern -->
+    <servlet-mapping>
+        <servlet-name>BookingMainController</servlet-name>
+        <url-pattern>/BookingMainController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>BookingSave1Controller</servlet-name>
+        <url-pattern>/BookingSave1Controller</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>BookingSave2Controller</servlet-name>
+        <url-pattern>/BookingSave2Controller</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>BookingSave3Controller</servlet-name>
+        <url-pattern>/BookingSave3Controller</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>BookingDeleteController</servlet-name>
+        <url-pattern>/BookingDeleteController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>BookingChangeStatusController</servlet-name>
+        <url-pattern>/BookingChangeStatusController</url-pattern>
+    </servlet-mapping>
+    <!-- contact controllers url pattern -->
+    <servlet-mapping>
+        <servlet-name>ContactMainController</servlet-name>
+        <url-pattern>/ContactMainController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ContactAddController</servlet-name>
+        <url-pattern>/ContactAddController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ContactChangeProcessedController</servlet-name>
+        <url-pattern>/ContactChangeProcessedController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ContactDeleteController</servlet-name>
+        <url-pattern>/ContactDeleteController</url-pattern>
+    </servlet-mapping>
+    <!-- CONTROLLERS URL PATTERN END -->
+    <!-- VIEWS URL PATTERN -->
+    <!-- error -->
+    <!-- account -->
+    <!-- admin -->
+    <!-- article -->
+    <!-- booking -->
+    <!-- contact -->
+    <!-- index -->
+    <!-- =========================================================================================== -->
+    <!-- error view url pattern -->
+    <servlet-mapping>
+        <servlet-name>error</servlet-name>
+        <url-pattern>/error</url-pattern>
+    </servlet-mapping>
+    <!-- account views url pattern -->
+    <servlet-mapping>
+        <servlet-name>login</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>sign-up</servlet-name>
+        <url-pattern>/sign-up</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>account-change-password</servlet-name>
+        <url-pattern>/account/change-password</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AccountProfileShowController</servlet-name>
+        <url-pattern>/account/profile</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AccountChangeInfoShowController</servlet-name>
+        <url-pattern>/account/change-info</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AccountBookingShowController</servlet-name>
+        <url-pattern>/account/booking</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AccountBookingViewShowController</servlet-name>
+        <url-pattern>/account/booking-view</url-pattern>
+    </servlet-mapping>
+    <!-- admin views url pattern -->
+    <servlet-mapping>
+        <servlet-name>AdminLocationShowController</servlet-name>
+        <url-pattern>/admin/location</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminAccountShowController</servlet-name>
+        <url-pattern>/admin/account</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminContactShowController</servlet-name>
+        <url-pattern>/admin/contact</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminArticleShowController</servlet-name>
+        <url-pattern>/admin/article</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminTourArticleShowController</servlet-name>
+        <url-pattern>/admin/tour-article</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminTourShowController</servlet-name>
+        <url-pattern>/admin/tour</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminAccountViewShowController</servlet-name>
+        <url-pattern>/admin/account-view</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminArticleEditShowController</servlet-name>
+        <url-pattern>/admin/article-edit</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminArticleAddShowController</servlet-name>
+        <url-pattern>/admin/article-add</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminContactViewShowController</servlet-name>
+        <url-pattern>/admin/contact-view</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminLocationAddShowController</servlet-name>
+        <url-pattern>/admin/location-add</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminTourArticleAddShowController</servlet-name>
+        <url-pattern>/admin/tour-article-add</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminTourArticleEditShowController</servlet-name>
+        <url-pattern>/admin/tour-article-edit</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminTourEditShowController</servlet-name>
+        <url-pattern>/admin/tour-edit</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminTourViewShowController</servlet-name>
+        <url-pattern>/admin/tour-view</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminBookingShowController</servlet-name>
+        <url-pattern>/admin/booking</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminBookingViewShowController</servlet-name>
+        <url-pattern>/admin/booking-view</url-pattern>
+    </servlet-mapping>
+    <!-- article views url pattern -->
+    <servlet-mapping>
+        <servlet-name>ArticleShowController</servlet-name>
+        <url-pattern>/article</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ArticleListShowController</servlet-name>
+        <url-pattern>/article-list</url-pattern>
+    </servlet-mapping>
+    <!-- tour article views url pattern -->
+    <servlet-mapping>
+        <servlet-name>TourArticleShowController</servlet-name>
+        <url-pattern>/tour-article</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>TourArticleListShowController</servlet-name>
+        <url-pattern>/tour-article-list</url-pattern>
+    </servlet-mapping>
+    <!-- booking views url pattern -->
+    <servlet-mapping>
+        <servlet-name>Booking1ShowController</servlet-name>
+        <url-pattern>/booking-1</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Booking2ShowController</servlet-name>
+        <url-pattern>/booking-2</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Booking3ShowController</servlet-name>
+        <url-pattern>/booking-3</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Booking4ShowController</servlet-name>
+        <url-pattern>/booking-4</url-pattern>
+    </servlet-mapping>
+    <!-- contact view url pattern -->
+    <servlet-mapping>
+        <servlet-name>contact</servlet-name>
+        <url-pattern>/contact</url-pattern>
+    </servlet-mapping>
+    <!-- index view url pattern -->
+    <servlet-mapping>
+        <servlet-name>IndexShowController</servlet-name>
+        <url-pattern>/home</url-pattern>
+    </servlet-mapping>
+    <!-- VIEWS URL PATTERN END -->
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>home</welcome-file>
+    </welcome-file-list>
+</web-app>

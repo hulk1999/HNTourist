@@ -1,0 +1,22 @@
+.info-group{
+	width: 50%;
+	float: left;
+	overflow: hidden;
+}
+
+.info-group:first-of-type{
+	width: 45%;
+	margin-right: 5%;
+}
+
+.info-label, .info-content{
+	width: 70%;
+	float: left;
+	margin: 10px 0px;
+}
+
+.info-label{
+	width: 30%;
+	font-weight: bold;
+	color: rgb(100, 100, 100);
+}

@@ -1,0 +1,139 @@
+#steps-container{
+    margin: 30px 0px;
+    overflow: hidden;
+}
+
+.step{
+    font-weight: bold;
+    font-size: 14px;
+    float: left;
+    width: 165px;
+    padding: 10px;
+    margin-right: 100px;
+    text-align: center;
+}
+
+.step:first-of-type{
+    margin-left: 140px;
+}
+
+.step-number{
+    font-size: 20px;
+}
+
+#current-step{
+    border: 2px solid rgb(255, 137, 30);
+    border-radius: 10px;
+}
+
+#announcement{
+    padding: 20px;
+    margin: 0px 4% 20px 6%;
+    color: rgb(60, 120, 76);
+    background-color: rgb(223, 240, 216);
+}
+
+#page-title{
+    margin: 30px 0px 0px 6%;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(38, 42, 46);
+}
+
+/*===============================================*/
+
+#main-content{
+    width: 55%;
+    margin: 30px 4% 0 6%;
+    display: inline-block;
+}
+
+#tour-image-container{
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+}
+
+#tour-image-container img{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#tour-title{
+    margin-top: 15px;
+    color: rgb(0, 51, 102);
+    font-size: 22px;
+}
+
+#page-navigation-container{
+    margin: 50px 0px;
+    overflow: hidden;
+}
+
+#page-navigation-left, #page-navigation-right{
+    padding: 10px;
+    width: 130px;
+	font-size: 16px;
+	border: none;
+    text-align: center;
+    color: white;
+    background-color: rgb(255, 137, 30);
+	cursor: pointer;
+}
+
+#page-navigation-left{
+    float: left;
+}
+
+#page-navigation-right{
+    float: right;
+}
+
+/*===============================================*/
+
+#right-sidebar{
+    width: 29%;
+    float: right;
+    margin: 30px 6% 0 0;
+    color: rgb(60, 60, 60);
+}
+
+#tour-container{
+    border: 1px solid rgb(200, 200, 200);
+    box-shadow: 3px 3px 3px rgb(200, 200, 200);
+    background-color: rgb(246, 246, 246);
+}
+
+.tour-info{
+    font-size: 15px;
+    margin: 14px 20px;
+}
+
+.tour-info-content{
+    font-weight: bold;
+}
+
+#sum-cost{
+    margin: 25px 20px;
+    font-size: 28px;
+}
+
+#cost-number{
+    font-weight: bold;
+    color: rgb(255, 137, 30);
+}
+
+#transaction-support{
+    padding: 10px 0px;
+    margin: 30px 0px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(255, 137, 30);
+}
+
+#support-number{
+    font-weight: bold;
+}

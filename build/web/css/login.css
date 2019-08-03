@@ -1,0 +1,83 @@
+#background-container{
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	position: relative;
+}
+
+#background-container img{
+	width: 100%;
+}
+
+#login-form-container{
+	position: absolute;
+	width: 272px;
+	height: 240px;
+	z-index: 10;
+	padding: 30px 50px;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+#login-form-container #title{
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	color: rgb(255, 137, 30);
+}
+
+input[type=text], input[type=password]{
+	width: 258px;
+	padding: 6px;
+	margin: 6px 0;
+	font-size: 16px;
+	outline: none;
+}
+
+#remember-password-container{
+	float: left;
+	color: rgb(200, 200, 200);
+	font-size: 14px;
+}
+
+input[name=remember]{
+	margin: 5px 0px 0px 0px;
+}
+
+input[type=submit]{
+	width: 100%;
+	font-size: 14px;
+	padding: 8px;
+	margin: 20px 0px 10px 0px;
+	border: none;
+	outline: none;
+	color: white;
+	background-color: rgb(255, 137, 30);
+	cursor: pointer;
+}
+
+input.form-invalid::-webkit-input-placeholder {
+   color: red;
+}
+
+#sign-up-container{
+	font-size: 14px;
+	float: left;
+}
+
+#sign-up-text{
+	color: rgb(200, 200, 200);
+}
+
+#sign-up-link{
+	color: rgb(66, 134, 244);
+	text-decoration: none;
+}

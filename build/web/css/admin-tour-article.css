@@ -1,0 +1,19 @@
+td:first-of-type{
+	width: 56px;
+}
+
+td:nth-of-type(2){
+	width: 400px;
+}
+
+td:nth-of-type(3){
+	width: 60px;
+}
+
+td:nth-of-type(4), td:nth-of-type(5){
+	width: 88px;
+}
+
+td:nth-of-type(6){
+	width: 60px;
+}

@@ -1,0 +1,67 @@
+#left-column-main-content-container{
+	overflow: hidden;
+}
+
+#main-content{
+	width: 70%;
+	margin: 50px 4% 50px 0px;
+	float: left;
+	overflow: hidden;
+}
+
+.info-group-title{
+	font-size: 22px;
+	font-weight: bold;
+	margin: 50px 0px 20px 0px;
+	color: rgb(40, 40, 40);
+}
+
+.info-group-title:first-of-type{
+	margin-top: 0px;
+}
+
+.tourist-info-group-title{
+	font-size: 18px;
+	font-weight: bold;
+	margin: 40px 0px 10px 0px;
+	color: rgb(40, 40, 40);
+}
+
+.info-line-container{
+	overflow: hidden;
+	margin: 14px 0px;
+}
+
+.info-container{
+	width: 50%;
+	float: left;
+}
+
+.info-container:first-of-type{
+	width: 20%;
+	margin-right: 10%;
+}
+
+.info-label{
+	margin-bottom: 6px;
+	font-weight: bold;
+	color: rgb(100, 100, 100);
+}
+
+.info-content a{
+	font-size: 15px;
+	font-weight: bold;
+	color: rgb(0, 97, 255);
+}
+
+.status{
+	color: white;
+	text-align: center;
+	padding: 5px;
+}
+
+.total{
+	margin-top: 12px;
+	font-weight: bold;
+	color: rgb(255, 137, 30);
+}

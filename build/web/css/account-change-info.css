@@ -1,0 +1,37 @@
+.info-group{
+	width: 50%;
+	float: left;
+	overflow: hidden;
+}
+
+.info-group:first-of-type{
+	width: 45%;
+	margin-right: 5%;
+}
+
+input, select{
+	width: 100%;
+	padding: 7px;
+	margin: 10px 0px;
+	font-size: 16px;
+	outline: none;
+	border: none;
+	border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+select{
+    padding-left: 3px;
+}
+
+input.form-invalid::-webkit-input-placeholder {
+   color: red;
+}
+
+input[type=submit]{
+	font-weight: bold;
+	color: white;
+	background-color: rgb(0, 85, 43);
+	width: 80px;
+	padding: 8px 0px;
+	margin: 30px calc(50% - 50px) 0px calc(50% - 50px);
+}

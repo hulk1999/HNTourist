@@ -1,0 +1,51 @@
+#search-form-container{
+	width: calc(100% - 2px);
+}
+
+#search-form-container input{
+	width: calc(100% - 60px);
+}
+
+td:first-of-type a{
+	color: rgb(0, 97, 255);
+}
+
+td:first-of-type{
+	font-size: 14px;
+	width: 30px;
+}
+
+td:nth-of-type(2){
+	width: 150px;
+}
+
+td:nth-of-type(3){
+	text-align: left;
+	width: 460px;
+}
+
+td:nth-of-type(3) a{
+	color: rgb(0, 97, 255);
+}
+
+td:nth-of-type(4){
+	font-size: 14px;
+	font-weight: bold;
+	width: 120px;
+}
+
+td:nth-of-type(5){
+	font-size: 20px;
+	width: 74px;
+}
+
+td:nth-of-type(5) button{
+	border: none;
+	font-size: 20px;
+	background-color: white;
+	cursor: pointer;
+}
+
+td:nth-of-type(6){
+	width: 60px;
+}

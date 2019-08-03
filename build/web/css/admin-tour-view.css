@@ -1,0 +1,42 @@
+#left-column-main-content-container{
+	overflow: hidden;
+}
+
+#main-content{
+	width: 70%;
+	margin: 50px 4% 50px 0px;
+	float: left;
+	overflow: hidden;
+}
+
+.info-group-title{
+	font-size: 22px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	color: rgb(40, 40, 40);
+}
+
+.info-line-container{
+	overflow: hidden;
+	margin: 14px 0px;
+}
+
+.info-container{
+	width: 25%;
+	float: left;
+}
+
+.info-container:first-of-type{
+	margin-right: 10%;
+}
+
+.info-label{
+	margin-bottom: 6px;
+	font-weight: bold;
+	color: rgb(100, 100, 100);
+}
+
+.info-content a{
+	font-weight: bold;
+	color: rgb(0, 97, 255);
+}

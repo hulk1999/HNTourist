@@ -1,0 +1,24 @@
+#header{
+	width: 100%;
+	position: relative;
+}
+
+#header img{
+	width: 100%;
+    filter: brightness(70%);
+}
+
+#header-title{
+	position: absolute;
+	width: 400px;
+	top: 210px;
+	left: 0px;
+	right: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 28px;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	z-index: 10;
+}

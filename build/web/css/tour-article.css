@@ -1,0 +1,167 @@
+#header{
+    width: 100%;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+}
+
+#header img{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#header-title{
+    position: absolute;
+    width: 92%;
+    bottom: 0px;
+    padding: 25px 4%;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 10;
+}
+
+/*===============================================*/
+
+#ultimate-container{
+	overflow: hidden;
+}
+
+#main-content{
+    width: 65%;
+    margin: 50px 4% 0 4%;
+    display: inline-block;
+}
+
+#tour-header-info{
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+#tour-header-info .column{
+    width: 50%;
+    float: left;
+}
+
+#tour-header-info .info{
+    margin-bottom: 10px;
+}
+
+#tour-header-info .info-content{
+    font-weight: bold;
+}
+
+#prices-list{
+    width: 100%;
+    margin-bottom: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: rgb(255, 237, 223);
+}
+
+#prices-list th{
+    color: rgb(60, 60, 60);
+    border-bottom: 1px solid black;
+}
+
+#prices-list th, #prices-list td{
+    text-align: center;
+	vertical-align: bottom;
+	padding-bottom: 5px;
+}
+
+#prices-list td:last-of-type{
+	padding-bottom: 0px;
+}
+
+#prices-list .number{
+    color: rgb(255, 137, 30);
+}
+
+#prices-list .buy-online-container{
+	position: relative;
+}
+
+#prices-list .discount{
+	padding: 4px 6px;
+	top: -17px;
+	right: -10px;
+	position: absolute;
+	font-size: 12px;
+	color: white;
+	background-color: red;
+}
+
+#prices-list .buy-online{
+    font-weight: normal;
+    padding: 5px;
+    margin: 1px 7px;
+    color: white;
+    background-color: rgb(255, 137, 30);
+}
+
+#prices-list .contains-discount{
+	margin-top: 16px;
+}
+
+#article-container{
+    margin-bottom: 50px;
+}
+
+#article-container img{
+    width: 100%;
+}
+
+#article-location{
+	font-weight: bold;
+}
+
+#article-location .location{
+	color: rgb(0, 97, 255);
+	display: inline;
+}
+
+#article-date{
+    text-align: right;
+    margin-right: 30px;
+    color: rgb(100, 100, 100);
+}
+
+.ql-align-center{
+	text-align: center;
+}
+
+/*===============================================*/
+
+#right-sidebar{
+    width: 23%;
+    float: right;
+    margin: 50px 4% 0 0;
+    color: rgb(60, 60, 60);
+}
+
+.right-sidebar-section{
+    background-color: white;
+    border: 1px solid rgb(220, 220, 220);
+    margin-bottom: 30px;
+}
+
+.right-sidebar-section-title{
+    border-bottom: 1px solid rgb(220, 220, 220);
+    padding: 15px;
+    color: white;
+    background-color: rgb(255, 137, 30);
+}
+
+.right-sidebar-section-content{
+    padding: 10px 15px;
+}
+
+.right-sidebar-section-content .info{
+    font-size: 14px;
+    line-height: 30px;
+}

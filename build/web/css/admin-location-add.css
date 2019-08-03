@@ -1,0 +1,13 @@
+.input-field-container{
+	width: 30%;
+	float: left;
+	margin-right: 5%;
+}
+
+.input-field-container:last-of-type{
+	margin-right: 0px;
+}
+
+select, input[type=text]{
+	width: calc(100% - 15px);
+}

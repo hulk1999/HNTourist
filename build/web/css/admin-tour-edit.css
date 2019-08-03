@@ -1,0 +1,54 @@
+#left-column-main-content-container{
+	overflow: hidden;
+}
+
+#main-content{
+	width: 70%;
+	margin: 50px 4% 50px 0px;
+	float: left;
+	overflow: hidden;
+}
+
+.input-line-container{
+	overflow: hidden;
+	margin: 14px 0px;
+}
+
+.input-field-container{
+	width: 45%;
+	float: left;
+}
+
+.input-field-container:first-of-type{
+	margin-right: 10%;
+}
+
+.tour-input-title{
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	color: rgb(40, 40, 40);
+	position: relative;
+}
+
+.input-label{
+	margin: 15px 0px 5px 0px;
+}
+
+input{
+	width: calc(100% - 14px);
+	padding: 5px;
+	font-size: 16px;
+	outline: none;
+}
+
+input[type=submit]{
+	width: 150px;
+	padding: 10px 0px;
+	margin-top: 30px;
+	margin-left: calc(100% - 150px);
+	border: none;
+	color: white;
+	background-color: rgb(255, 137, 30);
+	cursor: pointer;
+}
